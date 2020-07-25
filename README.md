@@ -61,16 +61,8 @@ The IPs are set at the moment of creating the certificates
 ```
 
 1. Create the certificates for the individual nodes. This information is not
-   really that sensitive, and can kept here:
+   really that sensitive, and is stored in the script ```issue-certs.sh```
 
-```console
-/opt/nebula/nebula-cert sign -name "lighthouse" -ip "192.168.101.1/24"
-/opt/nebula/nebula-cert sign -name "raspberrypi_0" -groups "pck,raspberrypi" -ip "192.168.101.3/24"
-/opt/nebula/nebula-cert sign -name "raspberrypi_1" -groups "kabaty,raspberrypi" -ip "192.168.101.2/24"
-/opt/nebula/nebula-cert sign -name "120s" -groups "kabaty,laptop" -ip "192.168.101.4/24"
-/opt/nebula/nebula-cert sign -name "raspberrypi_2" -ca-crt ./nebula-certificates/ca.crt -ca-key ./nebula-certificates/ca.key -out-crt ./nebula-certificates/raspberrypi_2.crt -out-key ./nebula-certificates/raspberrypi_2.key  -groups "twarda,raspberrypi" -ip "192.168.101.5/24"
-
-```
 ## Creating the lighthouse node with droplet instance @DigitalOcean
 
 ### Requirements
