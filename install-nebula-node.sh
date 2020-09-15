@@ -11,8 +11,8 @@ create-target-directories(){
 # sure the directories have proper permissions
 # $1 Directory for nebula certificates and config
 # $2 Directory for nebula binaries
-    [ -e "${1}" ] || mkdir "${1}"
-    [ -e "${2}" ] || mkdir "${2}"
+    [ -e "${1}" ] || mkdir -p "${1}"
+    [ -e "${2}" ] || mkdir -p "${2}"
     chown -R root:root "${1}"
     chown -R root:root "${2}"
     chmod 600 "${1}"
