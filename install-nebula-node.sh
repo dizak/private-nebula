@@ -36,7 +36,7 @@ download-nebula-binaries(){
 # Download nebula binaries right for the architecture.
 # $1 Download directory
 # $2 Target directory
-    NEBULA_BINS_LINUX_AMD64="https://github.com/slackhq/nebula/releases/download/v1.2.0/nebula-linux-arm-6.tar.gz"
+    NEBULA_BINS_LINUX_AMD64="https://github.com/slackhq/nebula/releases/download/v1.2.0/nebula-linux-amd64.tar.gz"
     NEBULA_BINS_LINUX_ARMv6="https://github.com/slackhq/nebula/releases/download/v1.2.0/nebula-linux-arm-6.tar.gz" 
     NEBULA_BINS_LINUX_ARMv7="https://github.com/slackhq/nebula/releases/download/v1.2.0/nebula-linux-arm-7.tar.gz" 
 
